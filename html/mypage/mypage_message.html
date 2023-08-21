@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+	<!-- 구글 검색 금지용 : 개발작업시 삭제 필요 -->
+	<meta name="robots" content="noindex, nofollow"> 
+	<!-- //구글 검색 금지용 : 개발작업시 삭제 필요 -->
+
+	<title>My Homeplus Membership</title>
+	<link rel="stylesheet" href="../../resources/css/mobile/reset.css"/>
+	<link rel="stylesheet" href="../../resources/css/mobile/common.css"/>
+	<link rel="stylesheet" href="../../resources/css/mobile/base.css"/>
+	<link rel="stylesheet" href="../../resources/css/mobile/renewal_common.css"/>
+	
+	<script type="text/javascript" src="../../resources/js/mobile/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrap renewal index"><!-- css구분을 위해서 전체 wrap에 class명 renewal 붙힘 -->
+		<header class="re_header">
+			<h1 class="tit">메세지함</h1>
+			<a href="javascript:;" class="btn_header_back">
+				<span class="blind">뒤로가기</span>
+			</a><!-- header_barcode -->
+			<a href="javascript:;" class="btn_header_home">
+				<span class="blind">메인페이지 이동</span>
+			</a><!-- header_barcode -->
+			<ul class="header_menu_lst">
+				<li class="btn_seader_side">
+					<a href="javascript:;"><span class="blind">사이드메뉴 열기</span></a>
+				</li>
+			</ul><!-- header_menu_lst -->
+		</header><!-- re_header -->
+
+		<!-- 메세지함 컨텐츠 영역 -->
+		<section class="message"> 
+			<div class="header">
+				<div class="message_wrap message_off_wrap" style="display: none;">
+					<div class="message_off_btn">
+						<p>알림설정</p>
+						<a href="#">
+							<img class="checkboxPmsPush" src="../../resources/img/mobile/message/on_off.jpg" onclick="setDisplay(true);" alt="on_off">
+						</a>
+					</div> 
+					<div class="message_off_txt">
+						<img src="../../resources/img/mobile/message/message.jpg" alt="off">
+						<span>알림이 꺼져 있어요.</span>
+						<p><strong>ON</strong>하시고 할인 쿠폰 등의 <strong>혜택 알림</strong>을 받아보세요!</p>
+					</div>
+					   <div class="message_title">
+						<ul></ul>
+					</div> 			                  
+				</div>
+				<div class="message_wrap message_on_wrap">
+					<div class="message_on_txt" style="display: none;">
+						<img src="../../resources/img/mobile/message/message.jpg" alt="on">
+						<span>수신된 메세지가 없습니다.</span>
+					</div>    
+					<div class="message_title" style="display: block;">
+						<ul>
+							<div class="message_today1">
+								<span>오늘</span>
+							</div>
+							<li>
+								<div class="message_box cont1">        	
+									<div class="message_on">
+										<div class="message_on_box btn1">	
+											<div class="message_txt" onclick="javascript:chk(this.parentElement, '1', 'N','1046432101');">
+												<h1>7월 출석왕에 도전 하세요!!</h1>
+												<span><span>매일 출석하면 홈플머니 5점 적립! 5회 출석마다 홈플머니 10점 적립! ※ 수신거부: 설정&gt;알림설정</span></span>
+												<time>09:06</time>       
+												<img src="../../resources/img/mobile/message/down.jpg" class="message_down" alt="다운버튼">
+											</div>
+											<div class="massage_TAS_box cont1">
+												<a href="#"><img class="message_img" alt="테스트 이미지" src="../../resources/img/mobile/renewal/data/thumnail_txt_banner.png"></a>
+											</div>
+										</div>
+									</div>			
+								</div>		
+							</li>
+							<div class="message_today1">
+								<span>어제</span>  
+							</div>
+							<li>
+								<div class="message_box cont2">        	
+									<div class="message_on" style="background-color: rgb(191, 196, 207);">
+										<div class="message_on_box btn2">	
+											<div class="message_txt" onclick="javascript:chk(this.parentElement, '1', 'Y','1046399238');">
+												<h1>설문 참여하시면 200p가 쏙~!</h1>
+												<span> (광고)설문조사 참여하시면 200포인트 즉시 적립!  ※수신거부:메뉴&gt;설정</span>
+												<time>14:45</time>       
+												<img src="../../resources/img/mobile/message/down.jpg" class="message_down" alt="다운버튼">
+											</div>
+											<div class="massage_TAS_box cont2">
+												<div class="massage_TAS_text">
+													<div class="massage_TAS_line last">
+														<a href="#"><img class="message_img" alt="테스트 이미지" src="../../resources/img/mobile/renewal/data/thumnail_txt_banner.png"></a>
+													</div>
+												</div>				
+											</div>
+										</div>
+									</div>
+								</div>	
+							</li>
+							<li>
+								<div class="message_box cont3">        	
+										<div class="message_on" style="background-color: rgb(191, 196, 207);">
+											<div class="message_on_box btn3">	
+											<div class="message_txt" onclick="javascript:chk(this.parentElement, '1', 'Y','1046137307');">
+												<h1>복날혜택★최대1만원쿠폰<br></h1>
+												<span><span>(광고)온라인에서만!선착순!</span></span>
+												<time>08:20</time>       
+												<img src="../../resources/img/mobile/message/down.jpg" class="message_down" alt="다운버튼">
+											</div>
+											<div class="massage_TAS_box cont3">
+												<a href="#"><img class="message_img" alt="테스트 이미지" src="../../resources/img/mobile/renewal/data/thumnail_txt_banner.png"></a>
+											</div>
+										</div>
+									</div>			
+								</div>		
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //메세지함 컨텐츠 영역 -->
+
+		
+		<!-- 사이드 메뉴 -->
+		<div class="snb_menu_cont">
+			<div class="snb_menu">
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+				사이드메뉴 <br />
+			</div><!-- snb_menu -->
+			<a href="javascript:;" class="btn_close_snb"><span class="blind">사이드메뉴닫기</span></a>
+		</div><!-- snb_menu_cont -->
+		<!-- //사이드 메뉴 -->
+
+	</div><!-- wrap -->
+	<script>
+		function chk(param, type, readYn, msgId) {
+			var btnClassName = "." + $(param).attr('class');
+			btnClassName = btnClassName.replace(" ", ".");
+
+			var contClassName = btnClassName.replace('btn', 'cont');
+			contClassName = contClassName.replace('on_', '');
+
+
+			if (type == '1') {
+				if ($(contClassName).hasClass('on')) {
+					$(contClassName).removeClass('on');
+				} else {
+					$(contClassName).addClass('on');
+				}
+				//읽음 처리
+				// fnReadMessage(readYn, msgId);
+			}
+
+			$(contClassName).children('.message_on').css('background-color', '#bfc4cf');
+			$(btnClassName).children('h1').css('color', '#656565');
+			$(btnClassName).children('span').css('color', '#656565');
+		}
+		function setDisplay(isShow) {
+            if (isShow) {
+
+                if (!$('#popup_pushAgree').hasClass('seet_active')) {
+                    $('#popup_pushAgree').addClass('seet_active');
+                }
+
+                // openPopup('pushAgree');
+
+            } else {
+                $('#popup_pushAgree').css('display', 'none');
+            }
+        }
+		// 읽음 처리
+		// function fnReadMessage(readYn, msgId) {
+        //     if (readYn == 'N') {
+        //         callAppFunc('120', null, msgId); //읽음처리	PMS의 ReadMsg.Class Call
+        //     }
+        // }
+		$(function(){
+		});
+	</script>
+</body>
+</html>
